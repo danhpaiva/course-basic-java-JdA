@@ -1,2 +1,3 @@
-# course-basic-java-JdA
-:yellow_heart: Introduction to Java
+<h1>Basic Java course by educator Jose de Assis</h1>
+
+<p></p>
