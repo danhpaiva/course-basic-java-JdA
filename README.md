@@ -1,5 +1,4 @@
-<h1 align="center">Basic Java Course</h1>
-<a href="https://youtu.be/q3JfB203agk" target="_blank">Youtube</a>
+<h1 align="center">Basic Java Course - <a href="https://youtu.be/q3JfB203agk" target="_blank">Youtube</a></h1>
 
 <p align="center">
     <img src="./logo/java-file.png" width="150">
