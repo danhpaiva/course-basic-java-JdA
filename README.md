@@ -2,7 +2,7 @@
 <a href="https://youtu.be/q3JfB203agk" target="_blank">Youtube</a>
 
 <p align="center">
-    <img src="./logo/java-file.png" width="200">
+    <img src="./logo/java-file.png" width="100">
 </p>
 
 <p align="center">
