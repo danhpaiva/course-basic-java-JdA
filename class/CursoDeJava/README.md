@@ -8,6 +8,7 @@ Fundamentals
 - Exercise Class 07 - Arithmetic Operators - Variables - Part 02/05
 - Exercise Class 08 - Conditional structures | Switch - Part 04/05
 - Exercise Class 09 - For | While | Do While - Part 05/05
+
 POO
 - Exercise Class 10 - Abstraction, Model Class and Objects - Part 01/07
 - Exercise Class 10 - Builders - Part 02/07
