@@ -4,5 +4,6 @@
 
 - Exercise Class 05 - Hello World
 - Exercise Class 06 - Fundamentals - Variables - Part 01
+- Exercise Class 07 - Arithmetic Operators - Variables - Part 02
 
 <p>Exercises were performed using the Eclipse IDE</p>
