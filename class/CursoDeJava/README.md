@@ -1,9 +1,7 @@
 <h1>Basic Java course by educator Jose de Assis</h1>
 
-<p>Open your terminal and compile:</p>
+<p>About:</p>
 
-javac hello.java
+- Exercise Class 05 - Hello World
 
-<p>Now:</p>
-
-java hello
+<p>Exercises were performed using the Eclipse IDE</p>
