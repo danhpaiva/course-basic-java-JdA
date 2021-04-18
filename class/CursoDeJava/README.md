@@ -8,5 +8,7 @@
 - Exercise Class 08 - Conditional structures | Switch - Part 04/05
 - Exercise Class 09 - For | While | Do While - Part 05/05
 - Exercise Class 10 - Abstraction, Model Class and Objects - Part 01/07
+- Exercise Class 10 - Builders - Part 02/07
+- Exercise Class 11 - Heritage - Part 03/07
 
 <p>Exercises were performed using the Eclipse IDE</p>
