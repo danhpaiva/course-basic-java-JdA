@@ -11,5 +11,5 @@ javac Hello.java
 <p>Now type in the terminal:</p>
 
 ~~~
-java hello
+java Hello
 ~~~
