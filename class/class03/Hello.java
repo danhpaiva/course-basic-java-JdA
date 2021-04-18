@@ -1,6 +1,5 @@
 /**
  * Hello World
- * 
  * @author Daniel Paiva
  */
 
