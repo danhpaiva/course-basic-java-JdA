@@ -10,7 +10,7 @@
  <a href="#instalacao">Installation</a> • 
  <a href="#tecnologias">Technology</a> • 
  <a href="#autor">Author</a> .
- <a href="#licenca">License</a> • 
+ <a href="#licenca">License</a>
 </p>
 
 <h2 align="center" id=status> 
