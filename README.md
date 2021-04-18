@@ -24,12 +24,13 @@ The goal is to learn to work with Java
 
 1. Clone the repo.
 2. Install Visual Studio and Eclipse.
+3. Access the class folder where the codes made in classes will be
 
 <h2 id=tecnologias>:toolbox: Technology</h2>
 
 The following tools were used in the construction of the project:
 
-- IDE: <a href="https://code.visualstudio.com/download">Visual Studio Code</a> | <a href="https://www.eclipse.org/downloads/">Eclipse v2020-12</a>
+- IDE: <a href="https://code.visualstudio.com/download">Visual Studio Code</a> | <a href="https://www.eclipse.org/downloads/">Eclipse Version: 2021-03 (4.19.0)</a>
 - JDK: <a href="https://adoptopenjdk.net/">OpenJDK 11 LTS</a>
 
 <h2 id=autor>:grin: Author</h2>
