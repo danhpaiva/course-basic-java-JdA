@@ -24,7 +24,7 @@ The goal is to learn to work with Java
 
 1. Clone the repo.
 2. Install Visual Studio and Eclipse.
-3. Access the class folder where the codes made in classes will be
+3. Access the CursoDeJava folder where the codes made in classes will be
 
 <h2 id=tecnologias>:toolbox: Technology</h2>
 
