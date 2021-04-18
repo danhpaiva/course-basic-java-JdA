@@ -18,5 +18,8 @@ POO
 - Exercise Class 14 - Methods - Part 06/07
 - Exercise Class 15 - Encapsulation - Part 07/07
 
+Exercises
+- Exercise 1 - Temperature Converter
+
 
 <p>Exercises were performed using the Eclipse IDE</p>
