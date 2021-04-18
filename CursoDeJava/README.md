@@ -14,5 +14,9 @@ POO
 - Exercise Class 10 - Builders - Part 02/07
 - Exercise Class 11 - Heritage - Part 03/07 
 - Exercise Class 12 - Polymorphism - Part 04/07
+- Exercise Class 13 - Access modifiers - Part 05/07 
+- Exercise Class 14 - Methods - Part 06/07
+- Exercise Class 15 - Encapsulation - Part 07/07
+
 
 <p>Exercises were performed using the Eclipse IDE</p>
