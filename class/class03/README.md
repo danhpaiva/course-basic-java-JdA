@@ -2,8 +2,12 @@
 
 <p>Open your terminal and compile:</p>
 
-javac hello.java
+~~~
+javac Hello.java
+~~~
 
-<p>Now:</p>
+<p>Now type in the terminal:</p>
 
+~~~
 java hello
+~~~
