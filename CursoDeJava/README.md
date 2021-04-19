@@ -20,6 +20,7 @@ POO
 
 Exercises
 - Exercise 1 - Temperature Converter
+- Exercise 2 - Percentage
 
 
 <p>Exercises were performed using the Eclipse IDE</p>
