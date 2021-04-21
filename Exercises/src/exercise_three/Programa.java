@@ -1,13 +1,9 @@
-/**
- * 
- */
 package exercise_three;
 
 import java.util.Scanner;
 
 /**
  * @author danhpaiva
- *
  */
 public class Programa {
 
@@ -32,5 +28,4 @@ public class Programa {
 		System.out.println("Seu troco �: " + pontoDeVenda.calcularTroco(pontoDeVenda));
 
 	}
-
 }
