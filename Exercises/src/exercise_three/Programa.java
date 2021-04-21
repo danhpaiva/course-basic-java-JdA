@@ -24,11 +24,12 @@ public class Programa {
 
 		System.out.print("Informe o valor pago: ");
 		pontoDeVenda.setValorPago(sc.nextDouble());
+		sc.close();
 
-		System.out.println("O valor total com desconto é: " + pontoDeVenda
+		System.out.println("O valor total com desconto ï¿½: " + pontoDeVenda
 				.calcularTotalDesconto(pontoDeVenda.getValorTotal(), pontoDeVenda.getDesconto(), pontoDeVenda));
 
-		System.out.println("Seu troco é: " + pontoDeVenda.calcularTroco(pontoDeVenda));
+		System.out.println("Seu troco ï¿½: " + pontoDeVenda.calcularTroco(pontoDeVenda));
 
 	}
 
