@@ -22,10 +22,10 @@ public class Programa {
 		pontoDeVenda.setValorPago(sc.nextDouble());
 		sc.close();
 
-		System.out.println("O valor total com desconto �: " + pontoDeVenda
+		System.out.println("O valor total com desconto : " + pontoDeVenda
 				.calcularTotalDesconto(pontoDeVenda.getValorTotal(), pontoDeVenda.getDesconto(), pontoDeVenda));
 
-		System.out.println("Seu troco �: " + pontoDeVenda.calcularTroco(pontoDeVenda));
+		System.out.println("Seu troco : " + pontoDeVenda.calcularTroco(pontoDeVenda));
 
 	}
 }
