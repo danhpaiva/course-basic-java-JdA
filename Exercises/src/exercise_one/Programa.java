@@ -1,13 +1,12 @@
+/**
+ * @author danhpaiva
+ */
 package exercise_one;
 
 import java.text.DecimalFormat;
 import java.util.logging.*;
 import java.util.Scanner;
 
-/**
- * @author danhpaiva
- *
- */
 public class Programa {
 	private static final Logger LOGGER = Logger.getLogger("");
 
