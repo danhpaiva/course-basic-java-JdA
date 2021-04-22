@@ -1,3 +1,8 @@
+
+/**
+ * @author danhpaiva
+ *
+ */
 package aplicacao;
 
 import java.io.File;
@@ -71,29 +76,29 @@ public class Atendimento {
 		do {
 			try {
 
-				String texto = "\nMENU DE OPÇÕES\n" + "\n1  - Recepcionar cliente"
+				String texto = "\nMENU DE OPï¿½ï¿½ES\n" + "\n1  - Recepcionar cliente"
 						+ "\n2  - Consultar clientes a serem atendidos" + "\n3  - Atender cliente"
 						+ "\n4  - Liberar todos os clientes" + "\n5  - Verificar quantidade de clientes a atender"
-						+ "\n6  - Localizar cliente por número" + "\n7  - Localizar cliente por nome"
-						+ "\n8  - Emitir relatório de clientes" + "\n9  - Ver relatório de clientes"
-						+ "\n10 - Filtrar clientes por valor" + "\n11 - Ver endereços hash" + "\n12 - Sobre"
+						+ "\n6  - Localizar cliente por nï¿½mero" + "\n7  - Localizar cliente por nome"
+						+ "\n8  - Emitir relatï¿½rio de clientes" + "\n9  - Ver relatï¿½rio de clientes"
+						+ "\n10 - Filtrar clientes por valor" + "\n11 - Ver endereï¿½os hash" + "\n12 - Sobre"
 						+ "\n13 - Sair\n";
 
 				op = Integer.parseInt(JOptionPane.showInputDialog(texto, "1"));
 
 			} catch (Exception e) {
 				JOptionPane.showMessageDialog(null,
-						"A tecla <<Cancelar>> foi acionada!\nEscolha a opção 6 para encerrar.", "Mensagem",
+						"A tecla <<Cancelar>> foi acionada!\nEscolha a opï¿½ï¿½o 6 para encerrar.", "Mensagem",
 						JOptionPane.CLOSED_OPTION);
 				continue;
 			}
 			if (op < 1 || op > 13) {
-				log.info("Opção Inválida!!");
+				log.info("Opï¿½ï¿½o Invï¿½lida!!");
 			}
 			if (op == 1) {
 				int numero = 0;
 				try {
-					numero = Integer.parseInt(JOptionPane.showInputDialog("NÚMERO DO CARTÃO: ", "0"));
+					numero = Integer.parseInt(JOptionPane.showInputDialog("Nï¿½MERO DO CARTï¿½O: ", "0"));
 				} catch (NumberFormatException e) {
 					agenteDeErro(e);
 					continue;
@@ -103,7 +108,7 @@ public class Atendimento {
 				while (varAuxiliar != null) {
 					if (varAuxiliar.getCartao() == numero) {
 						achou = true;
-						JOptionPane.showMessageDialog(null, "Esse número do cartão já foi usado.\nFavor verificar!");
+						JOptionPane.showMessageDialog(null, "Esse nï¿½mero do cartï¿½o jï¿½ foi usado.\nFavor verificar!");
 						break;
 					}
 					varAuxiliar = varAuxiliar.getVarProx();
@@ -117,7 +122,7 @@ public class Atendimento {
 						novo.setSobreNome(JOptionPane.showInputDialog(SOBRENOME, ""));
 
 						novo.setNome(novo.getNome().toUpperCase());
-						novo.setSobreNome(novo.getSobreNome().toUpperCase()); 
+						novo.setSobreNome(novo.getSobreNome().toUpperCase());
 
 						novo.valor = Double.parseDouble(JOptionPane.showInputDialog(VALOR, "0"));
 					} catch (NumberFormatException e) {
@@ -134,9 +139,9 @@ public class Atendimento {
 					}
 
 					JOptionPane.showMessageDialog(null,
-							"O cartão número " + novo.getCartao() + ", foi inserido para atendimento: ", MENSAGEMDOPROGRAMA,
-							JOptionPane.CLOSED_OPTION);
-					log.info("Acessou opção: Recepcionar cliente - " + getDateTime());
+							"O cartï¿½o nï¿½mero " + novo.getCartao() + ", foi inserido para atendimento: ",
+							MENSAGEMDOPROGRAMA, JOptionPane.CLOSED_OPTION);
+					log.info("Acessou opï¿½ï¿½o: Recepcionar cliente - " + getDateTime());
 				}
 			}
 			if (op == 2) {
@@ -147,19 +152,19 @@ public class Atendimento {
 				} else {
 					JTextArea saida = new JTextArea(6, 45); // HEIGHT X WIDTH
 					JScrollPane scroll = new JScrollPane(saida);
-					saida.append("CARTÃO\t" + NOME + "\tSOBRENOME\t" + "VALOR\n");
+					saida.append("CARTï¿½O\t" + NOME + "\tSOBRENOME\t" + "VALOR\n");
 					saida.append("-------------------------------------------------------------------------\n");
 					varAuxiliar = begin;
 					while (varAuxiliar != null) {
-						saida.append(varAuxiliar.getCartao() + "\t" + varAuxiliar.getNome() + "\t" + varAuxiliar.getSobreNome()
-								+ "\t" + varAuxiliar.valor + "\n");
+						saida.append(varAuxiliar.getCartao() + "\t" + varAuxiliar.getNome() + "\t"
+								+ varAuxiliar.getSobreNome() + "\t" + varAuxiliar.valor + "\n");
 						varAuxiliar = varAuxiliar.getVarProx();
 					}
 					saida.append("\n");
 					JOptionPane.showMessageDialog(null, scroll, "CONSULTAR DADOS DO ATENDIMENTO",
 							JOptionPane.CLOSED_OPTION);
 				}
-				log.info("Acessou opção: Consultar clientes a serem atendidos - " + getDateTime());
+				log.info("Acessou opï¿½ï¿½o: Consultar clientes a serem atendidos - " + getDateTime());
 			}
 			if (op == 3) {
 				if (begin == null) {
@@ -167,11 +172,11 @@ public class Atendimento {
 							JOptionPane.CLOSED_OPTION);
 				} else {
 					JOptionPane.showMessageDialog(null,
-							"CARTÃO:  " + begin.getCartao() + ", NOME: " + begin.getNome() + " foi atendido(a)!",
+							"CARTï¿½O:  " + begin.getCartao() + ", NOME: " + begin.getNome() + " foi atendido(a)!",
 							MENSAGEMDOPROGRAMA, JOptionPane.CLOSED_OPTION);
 					begin = begin.getVarProx();
 				}
-				log.info("Acessou opção: Atender cliente - " + getDateTime());
+				log.info("Acessou opï¿½ï¿½o: Atender cliente - " + getDateTime());
 			}
 			if (op == 4) {
 				if (begin == null) {
@@ -182,7 +187,7 @@ public class Atendimento {
 					JOptionPane.showMessageDialog(null, " * * O ATENDIMENTO FOI LIBERADO * *", MENSAGEMDOPROGRAMA,
 							JOptionPane.CLOSED_OPTION);
 				}
-				log.info("Acessou opção: Liberar todos os clientes - " + getDateTime());
+				log.info("Acessou opï¿½ï¿½o: Liberar todos os clientes - " + getDateTime());
 			}
 			if (op == 5) {
 				varAuxiliar = begin;
@@ -194,26 +199,26 @@ public class Atendimento {
 					n++;
 				}
 				JOptionPane.showMessageDialog(null,
-						"O ATENDIMENTO CONTÉM: " + n + " ELEMENTOS.\nVALOR TOTAL: " + soma + "\n", MENSAGEMDOPROGRAMA,
+						"O ATENDIMENTO CONTï¿½M: " + n + " ELEMENTOS.\nVALOR TOTAL: " + soma + "\n", MENSAGEMDOPROGRAMA,
 						JOptionPane.CLOSED_OPTION);
-				log.info("Acessou opção: Verificar quantidade de clientes a atender - " + getDateTime());
+				log.info("Acessou opï¿½ï¿½o: Verificar quantidade de clientes a atender - " + getDateTime());
 			}
 			if (op == 6) {
-				int cartao = Integer.parseInt(JOptionPane.showInputDialog("Informe o número do cartão", "0"));
+				int cartao = Integer.parseInt(JOptionPane.showInputDialog("Informe o nï¿½mero do cartï¿½o", "0"));
 				varAuxiliar = begin;
 				int posicao = 1;
 				while (varAuxiliar != null) {
 					if (cartao == varAuxiliar.cartao) {
-						String texto = "CARTÃO: " + varAuxiliar.getCartao() + "\n" + NOME + varAuxiliar.getNome() + "\n"
+						String texto = "CARTï¿½O: " + varAuxiliar.getCartao() + "\n" + NOME + varAuxiliar.getNome() + "\n"
 								+ SOBRENOME + varAuxiliar.getSobreNome() + "\n" + VALOR + varAuxiliar.valor + "\n"
-								+ "POSIÇÃO: " + posicao + "a. POSIÇÃO";
+								+ "POSIï¿½ï¿½O: " + posicao + "a. POSIï¿½ï¿½O";
 						JOptionPane.showMessageDialog(null, "DADOS DO CLIENTE: \n\n" + texto, MENSAGEMDOPROGRAMA,
 								JOptionPane.CLOSED_OPTION);
 					}
 					posicao++;
 					varAuxiliar = varAuxiliar.getVarProx();
 				}
-				log.info("Acessou opção: Localizar cliente por número - " + getDateTime());
+				log.info("Acessou opï¿½ï¿½o: Localizar cliente por nï¿½mero - " + getDateTime());
 
 			}
 			if (op == 7) {
@@ -222,9 +227,9 @@ public class Atendimento {
 				int posicao = 1;
 				while (varAuxiliar != null) {
 					if (varAuxiliar.getNome().equals(nome)) {
-						String texto = "CARTÃO: " + varAuxiliar.getCartao() + "\n" + NOME + varAuxiliar.getNome() + "\n"
+						String texto = "CARTï¿½O: " + varAuxiliar.getCartao() + "\n" + NOME + varAuxiliar.getNome() + "\n"
 								+ SOBRENOME + varAuxiliar.getSobreNome() + "\n" + VALOR + varAuxiliar.valor + "\n"
-								+ "POSIÇÃO: " + posicao + "a. POSIÇÃO";
+								+ "POSIï¿½ï¿½O: " + posicao + "a. POSIï¿½ï¿½O";
 						JOptionPane.showMessageDialog(null, "DADOS DO CLIENTE: \n\n" + texto, MENSAGEMDOPROGRAMA,
 								JOptionPane.CLOSED_OPTION);
 					}
@@ -232,7 +237,7 @@ public class Atendimento {
 					varAuxiliar = varAuxiliar.getVarProx();
 				}
 
-				log.info("Acessou opção: Localizar cliente por nome - " + getDateTime());
+				log.info("Acessou opï¿½ï¿½o: Localizar cliente por nome - " + getDateTime());
 
 			}
 			if (op == 8) {
@@ -243,7 +248,7 @@ public class Atendimento {
 					varAuxiliar = begin;
 
 					final String diretorio = "C:/DADOS";
-					// Verifica se a pasta existe, se não existe, cria!
+					// Verifica se a pasta existe, se nï¿½o existe, cria!
 					File file = new File(diretorio);
 					if (!file.exists()) {
 						file.mkdirs();
@@ -269,7 +274,7 @@ public class Atendimento {
 					JOptionPane.showMessageDialog(null, "ARQUIVO GRAVADO COM SUCESSO", "MENSAGEM DO SISTEMA",
 							JOptionPane.CLOSED_OPTION);
 				}
-				log.info("Acessou opção: Emitir relatório de clientes - " + getDateTime());
+				log.info("Acessou opï¿½ï¿½o: Emitir relatï¿½rio de clientes - " + getDateTime());
 			}
 			if (op == 9) {
 				int resposta = JOptionPane.showConfirmDialog(null, "DESEJA VER ARQUIVO?", "MENSAGEM",
@@ -282,22 +287,22 @@ public class Atendimento {
 						log.info("Erro . . . ");
 					}
 				}
-				log.info("Acessou opção: Ver relatório de clientes - " + getDateTime());
+				log.info("Acessou opï¿½ï¿½o: Ver relatï¿½rio de clientes - " + getDateTime());
 			}
 			if (op == 10) {
 				double filtro = Double.parseDouble(
 						JOptionPane.showInputDialog("FILTRAR ATENDIMENTOS PARA VALORES SUPERIORES A: ", ""));
 				JTextArea saida = new JTextArea(6, 45); // HEIGHT X WIDTH
 				JScrollPane scroll = new JScrollPane(saida);
-				saida.append("CARTÃO\t" + NOME + "\tSOBRENOME\t" + "VALOR\n");
+				saida.append("CARTï¿½O\t" + NOME + "\tSOBRENOME\t" + "VALOR\n");
 				saida.append("----------------------------------------------------------------------------\n");
 				varAuxiliar = begin;
 
 				while (varAuxiliar != null) {
 
 					if (varAuxiliar.valor > filtro) {
-						saida.append(varAuxiliar.getCartao() + "\t" + varAuxiliar.getNome() + "\t" + varAuxiliar.getSobreNome()
-								+ "\t" + varAuxiliar.valor + "\n");
+						saida.append(varAuxiliar.getCartao() + "\t" + varAuxiliar.getNome() + "\t"
+								+ varAuxiliar.getSobreNome() + "\t" + varAuxiliar.valor + "\n");
 					}
 
 					varAuxiliar = varAuxiliar.getVarProx();
@@ -305,7 +310,7 @@ public class Atendimento {
 				saida.append("\n");
 				JOptionPane.showMessageDialog(null, scroll, "ATENDIMENTOS COM VALORES SUPERIORES A: " + filtro,
 						JOptionPane.CLOSED_OPTION);
-				log.info("Acessou opção: Filtrar clientes por valor - " + getDateTime());
+				log.info("Acessou opï¿½ï¿½o: Filtrar clientes por valor - " + getDateTime());
 			}
 			if (op == 11) {
 				if (begin == null) {
@@ -314,7 +319,7 @@ public class Atendimento {
 				} else {
 					JTextArea saida = new JTextArea(7, 45); // HEIGHT X WIDTH
 					JScrollPane scroll = new JScrollPane(saida);
-					saida.append(NOME + "\tENDEREÇO\tPROX\t\n");
+					saida.append(NOME + "\tENDEREï¿½O\tPROX\t\n");
 					saida.append("-------------------------------------------------------------\n");
 					varAuxiliar = begin;
 					while (varAuxiliar != null) {
@@ -330,7 +335,7 @@ public class Atendimento {
 					JOptionPane.showMessageDialog(null, scroll, "CONSULTAR DADOS DO ATENDIMENTO",
 							JOptionPane.CLOSED_OPTION);
 				}
-				log.info("Acessou opção: Ver endereços hash - " + getDateTime());
+				log.info("Acessou opï¿½ï¿½o: Ver endereï¿½os hash - " + getDateTime());
 
 			}
 			if (op == 12) {
@@ -338,14 +343,14 @@ public class Atendimento {
 				saida.append("\n");
 				saida.append("PROGRAMA DE ATENDIMENTO AO CLIENTE\n");
 				saida.append("-------------------------------------------------------------\n");
-				saida.append("Copyright (c) Byta Bug Informática Ltda\n");
-				saida.append("Programadores: Asdrubal, Zemprônia e Gilmar\n");
-				saida.append("Versão 1.0\n");
+				saida.append("Copyright (c) Byta Bug Informï¿½tica Ltda\n");
+				saida.append("Programadores: Asdrubal, Zemprï¿½nia e Gilmar\n");
+				saida.append("Versï¿½o 1.0\n");
 				saida.append("Data: Abril de 2021\n");
-				saida.append("Necessita refatoração URGENTE!");
+				saida.append("Necessita refatoraï¿½ï¿½o URGENTE!");
 				saida.append("\n");
 				JOptionPane.showMessageDialog(null, saida, "SOBRE O PROGRAMA", JOptionPane.CLOSED_OPTION);
-				log.info("Acessou opção: Sobre - " + getDateTime());
+				log.info("Acessou opï¿½ï¿½o: Sobre - " + getDateTime());
 			}
 		} while (op != 13);
 		log.info("-------------------------------------------");

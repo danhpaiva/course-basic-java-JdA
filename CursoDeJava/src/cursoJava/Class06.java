@@ -1,12 +1,9 @@
 /**
- * 
- */
-package cursoJava;
-
-/**
  * @author danhpaiva
  *
  */
+package cursoJava;
+
 public class Class06 {
 
 	public static void main(String[] args) {

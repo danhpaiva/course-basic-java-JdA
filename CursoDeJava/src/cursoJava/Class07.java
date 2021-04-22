@@ -1,9 +1,13 @@
+/**
+ * @author danhpaiva
+ *
+ */
 package cursoJava;
 
 public class Class07 {
 
 	public static void main(String[] args) {
-		System.out.println("Operadores Aritméticos\n");
+		System.out.println("Operadores Aritmï¿½ticos\n");
 
 		double i = 10;
 
