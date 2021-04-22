@@ -1,9 +1,13 @@
+/**
+ * 
+ */
 package exercise_three;
 
 import java.util.Scanner;
 
 /**
  * @author danhpaiva
+ *
  */
 public class Programa {
 
@@ -20,12 +24,14 @@ public class Programa {
 
 		System.out.print("Informe o valor pago: ");
 		pontoDeVenda.setValorPago(sc.nextDouble());
-		sc.close();
 
-		System.out.println("O valor total com desconto : " + pontoDeVenda
+		sc.close();
+		
+		System.out.println("O valor total com desconto é: " + pontoDeVenda
 				.calcularTotalDesconto(pontoDeVenda.getValorTotal(), pontoDeVenda.getDesconto(), pontoDeVenda));
 
-		System.out.println("Seu troco : " + pontoDeVenda.calcularTroco(pontoDeVenda));
+		System.out.println("Seu troco é: " + pontoDeVenda.calcularTroco(pontoDeVenda));
 
 	}
+
 }

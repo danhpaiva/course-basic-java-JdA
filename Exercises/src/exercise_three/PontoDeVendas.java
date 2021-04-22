@@ -56,7 +56,8 @@ public class PontoDeVendas {
 	}
 
 	public double calcularTroco(PontoDeVendas ponto) {
-		return troco = ponto.valorTotal - ponto.totalDesconto;
+		troco = ponto.valorTotal - ponto.totalDesconto;
+		return troco;
 	}
 
 }
