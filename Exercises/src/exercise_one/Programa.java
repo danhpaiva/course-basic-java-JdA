@@ -1,6 +1,3 @@
-/**
- * 
- */
 package exercise_one;
 
 import java.text.DecimalFormat;
@@ -15,7 +12,7 @@ public class Programa {
 	private static final Logger LOGGER = Logger.getLogger("");
 
 	public static void main(String[] args) {
-		LOGGER.info("\tConversão de Temperatura");
+		LOGGER.info("\tConversï¿½o de Temperatura");
 		Conversor conversor = new Conversor();
 		Scanner leitor = new Scanner(System.in);
 		DecimalFormat formatador = new DecimalFormat("#0.0");
