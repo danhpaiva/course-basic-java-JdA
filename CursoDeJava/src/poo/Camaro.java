@@ -1,12 +1,9 @@
 /**
- * 
- */
-package poo;
-
-/**
  * @author danhpaiva
  *
  */
+package poo;
+
 public class Camaro {
 
 	public static void main(String[] args) {

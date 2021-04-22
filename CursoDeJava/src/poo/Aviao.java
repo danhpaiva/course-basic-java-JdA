@@ -1,12 +1,9 @@
 /**
- * 
- */
-package poo;
-
-/**
  * @author danhpaiva
  *
  */
+package poo;
+
 public class Aviao extends Carro {
 	double envergadura;
 
