@@ -1,14 +1,11 @@
 /**
- * 
+ * @author danhpaiva
+ *
  */
 package seguros;
 
 import contas.Conta;
 
-/**
- * @author danhpaiva
- *
- */
 public class SeguroPessoaFisica extends Conta {
 
 	public static void main(String[] args) {

@@ -1,12 +1,9 @@
 /**
- * 
- */
-package contas;
-
-/**
  * @author danhpaiva
  *
  */
+package contas;
+
 public class PessoaFisica {
 
 	public static void main(String[] args) {
@@ -40,11 +37,11 @@ public class PessoaFisica {
 		conta_corrente_um.exibirSaldo();
 		System.out.println("Cliente: " + conta_corrente_dois.getCliente());
 		conta_corrente_dois.exibirSaldo();
-		
+
 		System.out.println("\n");
 		Conta gerente = new Conta();
 		double relatorio = gerente.soma(conta_corrente_um.getSaldo(), conta_corrente_dois.getSaldo());
-		System.out.println("Relatório Gerencial\nSaldo Total: R$" + relatorio);
+		System.out.println("Relatï¿½rio Gerencial\nSaldo Total: R$" + relatorio);
 	}
 
 }
