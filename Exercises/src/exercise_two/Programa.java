@@ -1,14 +1,11 @@
 /**
- * 
+ * @author danhpaiva
+ *
  */
 package exercise_two;
 
 import java.util.Scanner;
 
-/**
- * @author danhpaiva
- *
- */
 public class Programa {
 
 	public static void main(String[] args) {
@@ -23,7 +20,7 @@ public class Programa {
 		porcentagem.setX(sc.nextDouble());
 		sc.close();
 
-		System.out.println("O valor da porcentagem é: " + porcentagem.calcularPorcentagem(porcentagem));
+		System.out.println("O valor da porcentagem ï¿½: " + porcentagem.calcularPorcentagem(porcentagem));
 	}
 
 }

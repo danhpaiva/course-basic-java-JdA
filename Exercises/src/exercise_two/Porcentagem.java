@@ -1,12 +1,9 @@
 /**
- * 
- */
-package exercise_two;
-
-/**
  * @author danhpaiva
  *
  */
+package exercise_two;
+
 public class Porcentagem {
 	private double x;
 	private double y;
