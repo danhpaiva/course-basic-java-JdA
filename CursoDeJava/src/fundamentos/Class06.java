@@ -1,12 +1,9 @@
 /**
- * 
- */
-package fundamentos;
-
-/**
  * @author danhpaiva
  *
  */
+package fundamentos;
+
 public class Class06 {
 
 	public static void main(String[] args) {
