@@ -3,7 +3,7 @@ package fundamentos;
 public class Class07 {
 
 	public static void main(String[] args) {
-		System.out.println("Operadores Aritmï¿½ticos\n");
+		System.out.println("Operadores Aritméticos\n");
 
 		double i = 10;
 

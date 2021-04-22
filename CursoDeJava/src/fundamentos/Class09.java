@@ -1,9 +1,12 @@
 /**
- * @author danhpaiva
- *
+ * 
  */
 package fundamentos;
 
+/**
+ * @author danhpaiva
+ *
+ */
 public class Class09 {
 
 	/**
@@ -29,7 +32,7 @@ public class Class09 {
 		System.out.println("\nUso do DOWhile");
 		double preco = 10;
 		do {
-			System.out.println("Preï¿½o: " + preco);
+			System.out.println("Preço: " + preco);
 			preco += 0.2;
 		} while (preco < 11);
 

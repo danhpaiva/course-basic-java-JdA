@@ -1,9 +1,12 @@
 /**
- * @author danhpaiva
- *
+ * 
  */
 package fundamentos;
 
+/**
+ * @author danhpaiva
+ *
+ */
 public class Class06 {
 
 	public static void main(String[] args) {

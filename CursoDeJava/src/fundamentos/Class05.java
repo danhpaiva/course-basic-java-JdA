@@ -1,9 +1,12 @@
 /**
- * @author danhpaiva
- * Hello World in Java
+ * 
  */
 package fundamentos;
 
+/**
+ * @author danhpaiva
+ * Hello World in Java
+ */
 public class Class05 {
 
 	public static void main(String[] args) {

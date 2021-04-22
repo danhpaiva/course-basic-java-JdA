@@ -1,21 +1,23 @@
 /**
+ * 
+ */
+package poo;
+import java.util.Random;
+
+/**
  * @author danhpaiva
  *
  */
-package poo;
-
-import java.util.Random;
-
 public class Carro {
 	int ano;
 	String cor;
-
+	
 	public Carro() {
 		Random geradorNumero = new Random();
 		int chassi = geradorNumero.nextInt(1000);
 		System.out.println("Chassi: " + chassi);
 	}
-
+	
 	public Carro(int ano, String cor) {
 		this.ano = ano;
 		this.cor = cor;

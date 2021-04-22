@@ -1,9 +1,12 @@
 /**
- * @author danhpaiva
- *
+ * 
  */
 package contas;
 
+/**
+ * @author danhpaiva
+ *
+ */
 public class Conta {
 	// Atributos
 	private String cliente;
@@ -27,7 +30,7 @@ public class Conta {
 	}
 
 	public Conta() {
-		System.out.println("Agï¿½ncia 0777");
+		System.out.println("Agência 0777");
 	}
 
 	protected void exibirSaldo() {
@@ -36,18 +39,18 @@ public class Conta {
 
 	void sacar(double valor) {
 		saldo -= valor;
-		System.out.println("Dï¿½bito: R$ " + valor);
+		System.out.println("Débito: R$ " + valor);
 	}
 
 	void depositar(double valor) {
 		saldo += valor;
-		System.out.println("Crï¿½dito: R$ " + valor);
+		System.out.println("Crédito: R$ " + valor);
 	}
 
 	void transferir(Conta destino, double valor) {
 		this.sacar(valor);
 		destino.depositar(valor);
-		System.out.println("Transferï¿½ncia: R$ " + valor);
+		System.out.println("Transferência: R$ " + valor);
 	}
 
 	double soma(double cc1, double cc2) {

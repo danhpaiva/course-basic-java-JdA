@@ -1,9 +1,12 @@
 /**
- * @author danhpaiva
- *
+ * 
  */
 package exercise_three;
 
+/**
+ * @author danhpaiva
+ *
+ */
 public class PontoDeVendas {
 	private double valorTotal;
 	private double desconto;
