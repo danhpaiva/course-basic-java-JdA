@@ -1,8 +1,8 @@
+
 /**
  * @author danhpaiva
  *
  */
-package aplicacao;
 
 import java.io.File;
 import java.io.FileWriter;
