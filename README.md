@@ -18,7 +18,7 @@
 </h2>
 
 <h2 id=objetivo>:scroll: Objective</h2>
-The goal is to learn to work with Java
+The objective of the course is to learn the fundamentals of Java.
 
 <h2 id=instalacao>:clipboard: Installation</h2>
 
